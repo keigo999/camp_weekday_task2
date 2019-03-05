@@ -62,12 +62,10 @@ class Car
 end
 # TrackCarクラスの追加(Carクラス継承)
 class TrackCar < Car
+  attr_reader :load_weight
+
   def initialize(name, color, load_weight = 500 )
     super(name,color)
     @load_weight = load_weight
-  end
-
-  def load_weight
-    @load_weight
   end
 end
