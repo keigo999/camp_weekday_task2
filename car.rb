@@ -60,7 +60,7 @@ class Car
     "Carクラスのクラス変数@@countは#{@@count}です。"
   end
 end
-# TrackCarクラスの追加
+# TrackCarクラスの追加(Carクラス継承)
 class TrackCar < Car
   def initialize(name, color, load_weight = 500 )
     super(name,color)
