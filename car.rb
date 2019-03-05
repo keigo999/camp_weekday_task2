@@ -41,6 +41,7 @@ class Car
     end
   end
 
+  # 乗車メソッドを追加
   def get_on
     if @passengers < MAX_PASSENGERS
       @passengers += 1
@@ -54,11 +55,12 @@ class Car
     @@count  # return @@countの略
   end
 
+  # クラス変数表示メソッドを追加
   def self.count_info
     "Carクラスのクラス変数@@countは#{@@count}です。"
   end
 end
-
+# TrackCarクラスの追加
 class TrackCar < Car
   def initialize(name, color, load_weight = 500 )
     super(name,color)
