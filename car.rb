@@ -55,7 +55,7 @@ class Car
   end
 
   def self.count_info
-    print "Carクラスのクラス変数@@countは#{@@count}です。"
+    "Carクラスのクラス変数@@countは#{@@count}です。"
   end
 end
 
