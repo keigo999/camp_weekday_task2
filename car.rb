@@ -52,6 +52,10 @@ class Car
   def self.count
     @@count  # return @@countの略
   end
+
+  def self.count_info
+    print "Carクラスのクラス変数@@countは#{@@count}です。"
+  end
 end
 
 class TrackCar < Car
