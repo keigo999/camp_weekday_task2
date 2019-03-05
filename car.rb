@@ -42,3 +42,14 @@ class Car
     @@count  # return @@countの略
   end
 end
+
+class TrackCar < Car
+  def initialize(name, color, load_weight = 500 )
+    super(name,color)
+    @load_weight = load_weight
+  end
+
+  def load_weight
+    @load_weight
+  end
+end
