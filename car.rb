@@ -16,6 +16,7 @@ class Car
     # @speedを初期化
     @speed = 0
     @@count += 1
+    # 運転手を追加
     @passengers = 1
   end
 
@@ -34,10 +35,10 @@ class Car
   def speed_down
     # ifの結果を変数に代入する場合は以下の記述でOK
     @speed = if @speed - DOWN_SPEED < 0
-               0
-             else
-               @speed - DOWN_SPEED
-             end
+      0
+    else
+      @speed - DOWN_SPEED
+    end
   end
 
   def get_on
